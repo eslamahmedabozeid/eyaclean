@@ -5,9 +5,8 @@ import './styleHome.css'
 import {Container, Row, Col} from 'react-bootstrap';
 import Image from 'next/image';
 import  './styleHome.css'
- import SliderComponent from '../slider/SliderComponent';
-
-
+import SliderComponent from '../../component/slider/SliderComponent';
+import Aboutcomponent from '../../component/aboutSection/Aboutcomponent'
 
 const HomeComponent = () => {
   return (
@@ -154,6 +153,12 @@ const HomeComponent = () => {
             </div>
         </div>
       </div>
+
+
+
+    <div className='About_section'>
+      <Aboutcomponent />
+    </div>
   </div>
   )
 }
