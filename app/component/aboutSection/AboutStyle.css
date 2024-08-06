@@ -1,0 +1,68 @@
+.title_about h6 {
+    color: var(--text-icon-primary, #1F2020);
+    /* English/Text/Large/Regular */
+    font-family: Aptly;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 30px */
+}
+
+.title_about h1 {
+    color: var(--text-icon-primary, #1F2020);
+    font-family: Aptly;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.title_about p {
+    color: var(--text-icon-disabled, #8F8F8F);
+    font-family: Aptly;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.frist_line h3 {
+    color: var(--text-icon-primary, #1F2020);
+    font-family: Aptly;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.frist_line p {
+    color: var(--text-icon-disabled, #8F8F8F);
+    font-family: Aptly;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+.frist_line {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.frist_line div {
+    margin-left: 17px;
+}
+
+.line_section {
+    display: flex;
+    margin-top: 32px;
+}
+
+.About_section {
+    padding-top: 117px;
+    padding-bottom: 120px;
+}

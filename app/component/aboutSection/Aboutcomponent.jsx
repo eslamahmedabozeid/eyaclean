@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import './AboutStyle.css';
 
 const Aboutcomponent = () => {
   return (

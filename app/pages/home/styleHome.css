@@ -226,6 +226,13 @@ button.DownloadNow {
     cursor: pointer;
 }
 
+.title_about {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 /* .slick-slide.slick-active {
     scale: 0.8;
