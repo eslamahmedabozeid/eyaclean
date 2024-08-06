@@ -85,6 +85,10 @@ const HomeComponent = () => {
                 <img className='posishion' src="/imgs/Vector.png" />
               </Col>
             </Row>
+
+            <div className='section_slider'>
+              
+            </div>
             </Container>
         </div>
       </div>
