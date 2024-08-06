@@ -5,7 +5,7 @@ import './styleHome.css'
 import {Container, Row, Col} from 'react-bootstrap';
 import Image from 'next/image';
 import  './styleHome.css'
-
+ import SliderComponent from '../slider/SliderComponent';
 
 
 
@@ -86,10 +86,72 @@ const HomeComponent = () => {
               </Col>
             </Row>
 
-            <div className='section_slider'>
-              
-            </div>
+            
             </Container>
+
+            <div className='section_slider'>
+            <SliderComponent />
+            </div>
+        </div>
+      </div>
+
+
+      
+      <div className='three_section secoond'>
+        <div className='images'>
+        <img src='/imgs/Union1.png' className="seccond_img" />
+        </div>
+        <div className="inner_section">
+          <Container>
+            <Row>
+              <Col>
+              <div className='text_line'>
+               <p>Salads</p>
+               <h1>The Fastes Delivery To Your Favorite Food</h1>
+               </div>
+              </Col>
+              <Col>
+                <img className='posishion' src="/imgs/Vector.png" />
+              </Col>
+            </Row>
+
+            
+            </Container>
+
+            <div className='section_slider'>
+            <SliderComponent />
+            </div>
+        </div>
+        <img src='/imgs/Union2.png'/>
+
+      </div>
+
+
+
+      <div className='three_section'>
+        <div className='images'>
+
+        </div>
+        <div className="inner_section">
+          <Container>
+            <Row>
+              <Col>
+              <div className='text_line'>
+               <p>Salads</p>
+               <h1>The Fastes Delivery To Your Favorite Food</h1>
+               </div>
+              </Col>
+              <Col>
+                <img className='posishion' src="/imgs/Vector.png" />
+              </Col>
+            </Row>
+
+            
+            </Container>
+
+            <div className='section_slider'>
+            <SliderComponent />
+            </div>
         </div>
       </div>
   </div>

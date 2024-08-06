@@ -178,9 +178,17 @@ button.DownloadNow {
     background-color: #045746;
 }
 
+.secoond .inner_section {
+    background-color: #033E32;
+}
+
 .posishion {
     position: absolute;
     right: 0;
+}
+
+.seccond_img {
+    position: absolute;
 }
 
 .text_line {
@@ -205,6 +213,28 @@ button.DownloadNow {
     line-height: 120%;
     /* 67.2px */
 }
+
+.section_slider {
+    margin-top: 96px;
+    padding-bottom: 108px;
+}
+
+.slick-next {
+    right: 35%;
+    bottom: -18% !important;
+    top: auto;
+    cursor: pointer;
+}
+
+
+/* .slick-slide.slick-active {
+    scale: 0.8;
+}
+
+.slick-slide.slick-active.slick-current,
+.slick-slide.slick-active.slick-cloned {
+    scale: 0.7;
+} */
 
 
 /* .overlay {
