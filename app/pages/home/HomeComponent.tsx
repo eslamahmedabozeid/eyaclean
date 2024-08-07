@@ -6,8 +6,10 @@ import {Container, Row, Col} from 'react-bootstrap';
 import Image from 'next/image';
 import  './styleHome.css'
 import SliderComponent from '../../component/slider/SliderComponent';
-import Aboutcomponent from '../../component/aboutSection/Aboutcomponent'
-
+import Aboutcomponent from '../../component/aboutSection/Aboutcomponent';
+import Testimonials from '../../component/testimonials/Testimonials';
+import FooterComponent from '../../component/footer/FooterComponent'
+  
 const HomeComponent = () => {
   return (
     <div>
@@ -120,8 +122,9 @@ const HomeComponent = () => {
             <div className='section_slider'>
             <SliderComponent />
             </div>
+            <img src='/imgs/Union2.png'/>
+
         </div>
-        <img src='/imgs/Union2.png'/>
 
       </div>
 
@@ -159,6 +162,43 @@ const HomeComponent = () => {
     <div className='About_section'>
       <Aboutcomponent />
     </div>
+
+    <div className="testimonials_section">
+      <Testimonials />
+    </div>
+
+    <div className='mapping'>
+     <Container>
+      <Row>
+        <Col>
+          <img src='/imgs/Map.png' />
+        </Col>
+        <Col>
+          <div className='title_mapping'>
+            <p>Location</p>
+            <h1>Al Olaya</h1>
+            <p className='values'>Hanifa Valley St, Al Olaya, Riyadh 12214</p>
+
+            <div className='mapping_icons'>
+              <div>
+                <img src='/imgs/location-09.png' />
+                <span>Direction</span>
+              </div>
+              <div>
+                <img src='/imgs/call.png' />
+                <span>+966592804512</span>
+              </div>
+            </div>
+          </div>
+        </Col>
+      </Row>
+     </Container>
+    </div>
+
+    <div className="section_footer">
+      <FooterComponent />
+    </div>
+
   </div>
   )
 }

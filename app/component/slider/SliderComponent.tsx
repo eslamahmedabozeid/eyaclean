@@ -37,8 +37,11 @@ const SliderComponent: React.FC = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
   };
+
+
+  
 
   return (
     <div className={styles.sliderContainer}>

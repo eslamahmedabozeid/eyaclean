@@ -1,0 +1,30 @@
+.frist_section h1 {
+    color: var(--Neutral-0---Primary-Background, #FFF);
+    font-family: Aptly;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126%;
+    /* 100.8px */
+}
+
+.flexed_footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 24px;
+}
+
+.title_footer h1 {
+    color: var(--Neutral-0---Primary-Background, #FFF);
+    font-family: Aptly;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126%;
+    /* 100.8px */
+}
+
+.section_footer ul {
+    display: flex;
+    justify-content: space-between;
+}
