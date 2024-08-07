@@ -119,6 +119,7 @@ button.DownloadNow {
     justify-content: space-around;
     width: 100%;
     max-width: 100%;
+    padding-top: 60px;
 }
 
 .second_section {
@@ -429,6 +430,18 @@ button.DownloadNow {
     }
     .slick-prev {
         bottom: -47% !important;
+    }
+    .title_about {
+        width: auto;
+    }
+    .navBar {
+        position: relative;
+        z-index: 9;
+        display: flow;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10px;
     }
 }
 

@@ -39,3 +39,15 @@
 .slick-prev:before {
     content: unset !important;
 }
+
+.bg-body-tertiary {
+    background-color: transparent !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
