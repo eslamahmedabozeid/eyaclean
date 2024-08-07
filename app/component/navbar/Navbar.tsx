@@ -3,7 +3,12 @@ import React from 'react'
 import Image from 'next/image'
 import  './styleNav.css'
 import {Container, Row, Col, Button} from 'react-bootstrap';
-import Link from 'next/link'
+import Link from 'next/link';
+
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 function NavbarComponent() {
   return (

@@ -421,6 +421,15 @@ button.DownloadNow {
     .lift_time {
         font-size: 58px;
     }
+    .slick-next {
+        right: 35%;
+        bottom: -47% !important;
+        top: auto;
+        cursor: pointer;
+    }
+    .slick-prev {
+        bottom: -47% !important;
+    }
 }
 
 
