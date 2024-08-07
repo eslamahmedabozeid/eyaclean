@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Aptly';
+    src: url('/fonts/fonnts.com-Aptly.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .slick-next {
     right: 35% !important;
     bottom: -18% !important;

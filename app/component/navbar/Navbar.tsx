@@ -3,8 +3,9 @@ import React from 'react'
 import Image from 'next/image'
 import  './styleNav.css'
 import {Container, Row, Col, Button} from 'react-bootstrap';
+import Link from 'next/link'
 
-function Navbar() {
+function NavbarComponent() {
   return (
     <div>
       <Container className='navBar'>
@@ -13,8 +14,8 @@ function Navbar() {
       height={31.456} alt="Picture of the author"/>
 
         <ul className='nav_bar'>
-          <li>Home</li>
-          <li>About Us</li>
+          <li><Link href="/"> Home </Link></li>
+          <li><Link href="/pages/about"> About Us </Link></li>
           <li>Menu</li>
           <li>Contact Us</li>
         </ul>
@@ -37,4 +38,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default NavbarComponent

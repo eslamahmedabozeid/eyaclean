@@ -15,7 +15,23 @@ const Testimonials = () => {
         autoplay: true,
         speed: 3000,
         autoplaySpeed: 3000,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            }
+          ]
       };
 
 

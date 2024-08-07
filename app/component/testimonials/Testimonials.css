@@ -69,3 +69,13 @@
     font-weight: 700;
     line-height: 120%;
 }
+
+@media(max-width:787px) {
+    .title h1 {
+        font-size: 38px;
+    }
+    .title {
+        text-align: center;
+        padding-bottom: 0;
+    }
+}
