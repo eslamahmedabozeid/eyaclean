@@ -8,6 +8,15 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .slick-next {
     right: 35% !important;
     bottom: -18% !important;

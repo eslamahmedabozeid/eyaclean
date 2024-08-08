@@ -53,7 +53,7 @@ function NavbarComponent() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/pages/about">About Us</Nav.Link>
             <Nav.Link href="#link">Menu</Nav.Link>
-            <Nav.Link href="#link">Contact Us</Nav.Link>
+            <Nav.Link href="/pages/contact">Contact Us</Nav.Link>
           </Nav>
           <div className="langu">
          <Button className='downloadButton'>       

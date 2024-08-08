@@ -7,7 +7,7 @@ const Aboutcomponent = () => {
     <div>
         <Container>
             <Row>
-                <Col>
+                <Col xs={12} sm={12} md={6}>
                 <div className="title_about">
                     <h6>About Us</h6>
                     <h1>The Fastes Delivery To Your Favorite Food</h1>
@@ -31,7 +31,7 @@ const Aboutcomponent = () => {
                     </div>
                 </div>
                 </Col>
-                <Col>
+                <Col xs={12} sm={12} md={6}>
                     <img src='/imgs/image7.png' />
                 </Col>
             </Row>

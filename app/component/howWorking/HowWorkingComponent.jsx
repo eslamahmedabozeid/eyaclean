@@ -12,28 +12,28 @@ const HowWorkingComponent = () => {
             <h1>How We work It?</h1>
         <Container>
             <Row>
-                <Col>
+                <Col xs={6} sm={6} md={3}>
                     <div className='grid_working'>
                     <img src='/imgs/Rectangle1.png' />
                     <h2>Lorem ipsum dolor </h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Vestibulum urna.</p>
                     </div>
                 </Col>
-                <Col>
+                <Col xs={6} sm={6} md={3}>
                     <div className='grid_working'>
                     <img src='/imgs/Rectangle1.png' />
                     <h2>Lorem ipsum dolor </h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Vestibulum urna.</p>
                     </div>
                 </Col>
-                <Col>
+                <Col xs={6} sm={6} md={3}>
                     <div className='grid_working'>
                     <img src='/imgs/Rectangle1.png' />
                     <h2>Lorem ipsum dolor </h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Vestibulum urna.</p>
                     </div>
                 </Col>
-                <Col>
+                <Col xs={6} sm={6} md={3}>
                     <div className='grid_working'>
                     <img src='/imgs/Rectangle1.png' />
                     <h2>Lorem ipsum dolor </h2>

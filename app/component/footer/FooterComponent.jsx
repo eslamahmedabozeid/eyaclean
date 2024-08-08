@@ -22,10 +22,10 @@ const FooterComponent = () => {
 
 
         <Row>
-          <Col>
-            <img src='/imgs/logo.png' />
+          <Col xs={12} sm={6} md={4}>
+            <img src='/imgs/logo.png' className='logo'/>
           </Col>
-          <Col>
+          <Col  xs={12} sm={6} md={4}>
             <ul className='footer_link'>
               <li>Our Story</li>
               <li>Menu</li>
@@ -33,7 +33,7 @@ const FooterComponent = () => {
               <li>Contact</li>
             </ul>
           </Col>
-          <Col>
+          <Col  xs={12} sm={6} md={4}>
           <ul className='footer_social'>
               <li><img src='/imgs/Frame25.png' /> </li>
               <li><img src='/imgs/Frame24.png' /> </li>
@@ -44,10 +44,10 @@ const FooterComponent = () => {
         </Row>
         <div className='copy_right'>
           <Row>
-            <Col>
+            <Col xs={6} sm={6} md={6}>
               <h3>2024©All rights reserved</h3>
             </Col>
-            <Col>
+            <Col xs={6} sm={6} md={6}>
               <div className='terms'>
                 <ul>
                   <li>Terms & Conditions</li>
