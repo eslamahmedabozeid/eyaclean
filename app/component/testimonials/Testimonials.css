@@ -70,6 +70,12 @@
     line-height: 120%;
 }
 
+.testimonials_section {
+    background-image: url('../../../public/imgs/image12.png');
+    padding-top: 104px;
+    padding-bottom: 94px;
+}
+
 @media(max-width:787px) {
     .title h1 {
         font-size: 38px;
@@ -77,5 +83,8 @@
     .title {
         text-align: center;
         padding-bottom: 0;
+    }
+    .testimonials_section {
+        background-size: cover;
     }
 }

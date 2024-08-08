@@ -47,6 +47,11 @@
     height: 50px;
 }
 
+.section_slider {
+    margin-top: 96px;
+    padding-bottom: 108px;
+}
+
 @media(max-width:787px) {
     .productCard {
         text-align: center;
@@ -54,5 +59,9 @@
     }
     .productName {
         font-size: 22px;
+    }
+    .section_slider {
+        margin-top: 0;
+        padding-bottom: 41px;
     }
 }
