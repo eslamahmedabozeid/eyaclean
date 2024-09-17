@@ -98,6 +98,19 @@
 .poshion {
     position: absolute;
     top: -33px;
+    width: 100%;
+    overflow: hidden;
+    left: 0;
+}
+
+.Union {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer_link a {
+    text-decoration: unset !important;
+    color: #FFF !important;
 }
 
 @media(max-width: 767px) {
@@ -139,6 +152,7 @@
     .section_footer .footer_link {
         justify-content: space-between;
         margin-bottom: 50px;
-        flex-direction: row
+        flex-direction: row;
+        padding: 0;
     }
 }

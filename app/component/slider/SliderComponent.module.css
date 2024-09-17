@@ -26,6 +26,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
+    margin-top: 20px;
     /* 41.6px */
 }
 
@@ -58,7 +59,7 @@
         padding: 0;
     }
     .productName {
-        font-size: 22px;
+        font-size: 19px;
     }
     .section_slider {
         margin-top: 0;

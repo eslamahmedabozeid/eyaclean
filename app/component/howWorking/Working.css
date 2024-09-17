@@ -52,3 +52,9 @@
     line-height: 150%;
     /* 30px */
 }
+
+@media(max-width:787px) {
+    .grid_working p {
+        margin-bottom: 50px;
+    }
+}

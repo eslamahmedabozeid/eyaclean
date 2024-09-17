@@ -12,7 +12,7 @@
 
 .nav_bar.navbar-nav a {
     margin-right: 24px;
-    color: var(--text-icon-primary, #1F2020);
+    color: var(--text-icon-disabled, #8F8F8F);
     font-family: Aptly;
     font-size: 20px;
     font-style: normal;
@@ -49,6 +49,15 @@
     margin: 0 1px;
 }
 
+body.rtl .nav_bar.navbar-nav a {
+    margin-left: 24px;
+    margin-right: 0;
+}
+
+.active {
+    color: #000 !important;
+}
+
 @media(max-width: 768px) {
     .navBar {
         position: relative;
@@ -65,5 +74,12 @@
         flex-direction: column !important;
         justify-content: center !important;
         width: 100% !important;
+    }
+    .navbar-expand-lg {
+        padding-top: 18px;
+    }
+    .nav_bar.navbar-nav button {
+        font-size: 24px;
+        margin: 20px 0;
     }
 }

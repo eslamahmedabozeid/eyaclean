@@ -1,50 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react'
-import {Container, Row, Col} from 'react-bootstrap';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import './Working.css';
+import { translate } from '../../translations/TranslationContext';
 
-const HowWorkingComponent = () => {
+const HowWorkingComponent = ({ lang ,images}) => {
   return (
     <div>
-        <div className='title_how'>
-            <p>How We Make quality Foods </p>
-            <h1>How We work It?</h1>
+      <div className='title_how'>
+        <p>{images?.slug}</p>
+        <h1>{images?.title}</h1>
         <Container>
-            <Row>
-                <Col xs={6} sm={6} md={3}>
-                    <div className='grid_working'>
-                    <img src='/imgs/Rectangle1.png' />
-                    <h2>Lorem ipsum dolor </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Vestibulum urna.</p>
-                    </div>
-                </Col>
-                <Col xs={6} sm={6} md={3}>
-                    <div className='grid_working'>
-                    <img src='/imgs/Rectangle1.png' />
-                    <h2>Lorem ipsum dolor </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Vestibulum urna.</p>
-                    </div>
-                </Col>
-                <Col xs={6} sm={6} md={3}>
-                    <div className='grid_working'>
-                    <img src='/imgs/Rectangle1.png' />
-                    <h2>Lorem ipsum dolor </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Vestibulum urna.</p>
-                    </div>
-                </Col>
-                <Col xs={6} sm={6} md={3}>
-                    <div className='grid_working'>
-                    <img src='/imgs/Rectangle1.png' />
-                    <h2>Lorem ipsum dolor </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Vestibulum urna.</p>
-                    </div>
-                </Col>
-            </Row>
+          <Row>
+            {images?.Posts.map((item)=> (
+            <Col xs={6} sm={6} md={3} key={item?.id}>
+            <div className='grid_working'>
+              <img src='/imgs/Rectangle1.png' alt="Working Step 1" />
+              <h2>{item?.title}</h2>
+              <p>{item?.description}</p>
+            </div>
+            </Col>
+            ))}
+          </Row>
         </Container>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default HowWorkingComponent
+export default HowWorkingComponent;
