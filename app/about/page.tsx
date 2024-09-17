@@ -127,53 +127,7 @@ const Page = () => {
                      </div>
                    </Col>
                   ))}
-                  {/* <Col xs={12} sm={12} md={6}>
-                    <div className='box_Delivery'>
-                      <div className='flexed_Delivery'>
-                        <img src='/imgs/Frame420.png' alt="Fresh Product" />
-                        <div className='child_title'>
-                          <h3>{translate('Fresh Product', lang)}</h3>
-                          <p>{translate('At Saldwich, we provide the freshest and healthiest food', lang)}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </Col> */}
-                  {/* <Col xs={12} sm={12} md={6}>
-                    <div className='box_Delivery'>
-                      <div className='flexed_Delivery'>
-                        <img src='/imgs/Frame420.png' alt="Fresh Product" />
-                        <div className='child_title'>
-                          <h3>{translate('Fresh Product', lang)}</h3>
-                          <p>{translate('At Saldwich, we provide the freshest and healthiest food', lang)}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </Col> */}
                 </Row>
-                {/* <Row>
-                  <Col xs={12} sm={12} md={6}>
-                    <div className='box_Delivery'>
-                      <div className='flexed_Delivery'>
-                        <img src='/imgs/Frame420.png' alt="Fresh Product" />
-                        <div className='child_title'>
-                          <h3>{translate('Fresh Product', lang)}</h3>
-                          <p>{translate('At Saldwich, we provide the freshest and healthiest food', lang)}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </Col>
-                  <Col xs={12} sm={12} md={6}>
-                    <div className='box_Delivery'>
-                      <div className='flexed_Delivery'>
-                        <img src='/imgs/Frame420.png' alt="Fresh Product" />
-                        <div className='child_title'>
-                          <h3>{translate('Fresh Product', lang)}</h3>
-                          <p>{translate('At Saldwich, we provide the freshest and healthiest food', lang)}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </Col>
-                </Row> */}
               </div>
             </Col>
             <Col>

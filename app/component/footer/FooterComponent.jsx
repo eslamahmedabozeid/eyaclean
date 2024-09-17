@@ -1,12 +1,39 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import './footerStyle.css';
 import { translate } from '../../translations/TranslationContext';
 import Link from 'next/link';
 
 const FooterComponent = ({ lang }) => {
+  const [Setting, setSetting] = useState({});
+
+  useEffect(() => {
+    const fetchSetting = async () => {
+      try {
+        const storedLang = localStorage.getItem('lang') || 'en';
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/setting`, {
+          method: 'GET',
+          headers: {
+            'Accept-Language': storedLang,
+          }
+        });
+        
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+  
+        const data = await response.json();
+        setSetting(data); 
+      } catch (error) {
+        console.error('Error fetching home page data:', error);
+      }
+    };
+  
+    fetchSetting();
+  }, []);
+
   return (
     <div>
     <Container>
@@ -39,10 +66,10 @@ const FooterComponent = ({ lang }) => {
         </Col>
         <Col xs={12} sm={6} md={4}>
           <ul className='footer_social'>
-            <li><a href='#'> <img src='/imgs/Frame_22.svg' alt="Social 1" /></a></li>
-            <li><a href='#'> <img src='/imgs/Frame_23.svg' alt="Social 2" /></a> </li>
-            <li><a href='#'> <img src='/imgs/Frame_24.svg' alt="Social 3" /></a></li>
-            <li><a href='#'> <img src='/imgs/Frame_25.svg' alt="Social 4" /></a></li>
+            <li><a href={Setting?.data?.setting.social?.facebook}> <img src='/imgs/Frame_22.svg' alt="Social 1" /></a></li>
+            <li><a href={Setting?.data?.setting.social?.linked_in}> <img src='/imgs/Frame_23.svg' alt="Social 2" /></a> </li>
+            <li><a href={Setting?.data?.setting.social?.twetter}> <img src='/imgs/Frame_24.svg' alt="Social 3" /></a></li>
+            <li><a href={Setting?.data?.setting.social?.instgram}> <img src='/imgs/Frame_25.svg' alt="Social 4" /></a></li>
           </ul>
         </Col>
       </Row>
