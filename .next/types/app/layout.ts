@@ -1,4 +1,4 @@
-// File: W:\react\saldwish_frontend\app\layout.tsx
+// File: W:\react\eyaclean\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

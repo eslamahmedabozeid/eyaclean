@@ -1,8 +1,8 @@
-// File: W:\react\eyaclean\app\page.tsx
-import * as entry from '../../../app/page.js'
+// File: W:\react\eyaclean\app\menu\page.jsx
+import * as entry from '../../../../app/menu/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../app/page.js')
+type TEntry = typeof import('../../../../app/menu/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

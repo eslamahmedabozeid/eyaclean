@@ -106,15 +106,28 @@ const Page = () => {
           <Row>
             <Col xs={12} sm={12} md={6}>
               <div className='title_Delivery'>
-                <p>{translate('Why Choose Us', lang)}</p>
-                <h1>{translate('The Fastest Delivery To Your Favorite Food', lang)}</h1>
+                <p>{aboutPageData?.data?.sections[2]?.title}</p>
+                <h1>{aboutPageData?.data?.sections[2]?.Posts[0]?.title}</h1>
                 <p className='prgraphe_Delivery'>
-                  {translate('At Saldwich, we provide the freshest and healthiest food options in KSA. Join us in promoting a healthier lifestyle', lang)}
+                  {aboutPageData?.data?.sections[2]?.Posts[0]?.description}
                 </p>
               </div>
               <div className='grid_rows'>
                 <Row>
-                  <Col xs={12} sm={12} md={6}>
+                  {aboutPageData?.data?.sections[2]?.Posts[0]?.children.map((item:any)=>(
+                     <Col xs={12} sm={12} md={6} key={item.id}>
+                     <div className='box_Delivery'>
+                       <div className='flexed_Delivery'>
+                         <img src={item.attachment[0]?.original} alt="Fresh Product" />
+                         <div className='child_title'>
+                           <h3>{item.title}</h3>
+                           <p>{item.description}</p>
+                         </div>
+                       </div>
+                     </div>
+                   </Col>
+                  ))}
+                  {/* <Col xs={12} sm={12} md={6}>
                     <div className='box_Delivery'>
                       <div className='flexed_Delivery'>
                         <img src='/imgs/Frame420.png' alt="Fresh Product" />
@@ -124,8 +137,8 @@ const Page = () => {
                         </div>
                       </div>
                     </div>
-                  </Col>
-                  <Col xs={12} sm={12} md={6}>
+                  </Col> */}
+                  {/* <Col xs={12} sm={12} md={6}>
                     <div className='box_Delivery'>
                       <div className='flexed_Delivery'>
                         <img src='/imgs/Frame420.png' alt="Fresh Product" />
@@ -135,9 +148,9 @@ const Page = () => {
                         </div>
                       </div>
                     </div>
-                  </Col>
+                  </Col> */}
                 </Row>
-                <Row>
+                {/* <Row>
                   <Col xs={12} sm={12} md={6}>
                     <div className='box_Delivery'>
                       <div className='flexed_Delivery'>
@@ -160,12 +173,12 @@ const Page = () => {
                       </div>
                     </div>
                   </Col>
-                </Row>
+                </Row> */}
               </div>
             </Col>
             <Col>
               <div className='text-center Delivery'>
-                <img src='/imgs/image6.png' alt="Delivery" />
+                <img src={aboutPageData?.data?.sections[2]?.Posts[0]?.attachment[0]?.original} alt="Delivery" />
               </div>
             </Col>
           </Row>
